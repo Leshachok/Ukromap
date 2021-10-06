@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "936193624101",
+    "project_id": "rising-environs-293816",
+    "storage_bucket": "rising-environs-293816.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:936193624101:android:bcb5dd4043bcb3696f57cc",
+        "android_client_info": {
+          "package_name": "com.example.ukromap"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "936193624101-i28pavfime3thjhvfhkisl5e2j83cqgg.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.ukromap",
+            "certificate_hash": "c25fe4a801f331f3725df68119da88144fd51d1d"
+          }
+        },
+        {
+          "client_id": "936193624101-og27pb31nsb3v86rqticr453stnjpjet.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC0Ugu6vzyK6MeYzC-Or4b28sqNRWmrgD4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "936193624101-og27pb31nsb3v86rqticr453stnjpjet.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

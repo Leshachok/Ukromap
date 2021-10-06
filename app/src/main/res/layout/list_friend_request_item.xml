@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="160dp"
+    android:background="@drawable/listfriendsxml">
+
+    <TextView
+        android:id="@+id/usernick"
+        android:layout_width="148dp"
+        android:layout_height="23dp"
+        android:layout_marginStart="36dp"
+        android:layout_marginTop="8dp"
+        android:fontFamily="@font/roboto_mono"
+        android:textAlignment="center"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/userphoto" />
+
+    <ImageView
+        android:id="@+id/userphoto"
+        android:layout_width="83dp"
+        android:layout_height="82dp"
+        android:layout_marginStart="68dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.127"
+        app:srcCompat="@drawable/icon" />
+
+    <TextView
+        android:id="@+id/userguid"
+        android:layout_width="175dp"
+        android:layout_height="12dp"
+        android:layout_marginTop="16dp"
+        android:textAlignment="center"
+        android:textSize="10sp"
+        app:layout_constraintEnd_toEndOf="@+id/usernick"
+        app:layout_constraintStart_toStartOf="@+id/usernick"
+        app:layout_constraintTop_toBottomOf="@+id/usernick" />
+
+    <Button
+        android:id="@+id/denybutton"
+        android:layout_width="160dp"
+        android:layout_height="43dp"
+        android:layout_marginTop="19dp"
+        android:text="Відхилити"
+        app:layout_constraintEnd_toEndOf="@+id/acceptbutton"
+        app:layout_constraintTop_toBottomOf="@+id/acceptbutton" />
+
+    <Button
+        android:id="@+id/acceptbutton"
+        android:layout_width="160dp"
+        android:layout_height="43dp"
+        android:layout_marginTop="36dp"
+        android:layout_marginEnd="16dp"
+        android:text="Прийняти"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

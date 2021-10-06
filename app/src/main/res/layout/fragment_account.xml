@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorWhite"
+    tools:context="fragments.AccountFragment">
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <TextView
+            android:id="@+id/logout"
+            android:layout_width="240dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="60dp"
+            android:fontFamily="@font/roboto_mono"
+            android:text="Log out"
+            android:textAlignment="center"
+            android:textSize="30sp"
+            app:layout_constraintStart_toStartOf="@+id/accountappinfo"
+            app:layout_constraintTop_toBottomOf="@+id/accountappinfo" />
+
+        <TextView
+            android:id="@+id/avatarname"
+            android:layout_width="109dp"
+            android:layout_height="24dp"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="72dp"
+            android:fontFamily="@font/roboto_mono"
+            android:textAlignment="textStart"
+            android:textSize="17sp"
+            app:layout_constraintStart_toEndOf="@+id/profileImage"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/profilestarsphoto"
+            android:layout_width="62dp"
+            android:layout_height="56dp"
+            android:layout_marginTop="112dp"
+            android:src="@drawable/borscht"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/sightcount"
+            android:layout_width="136dp"
+            android:layout_height="22dp"
+            android:layout_marginTop="32dp"
+            android:layout_marginEnd="8dp"
+            android:fontFamily="@font/roboto_mono"
+            android:textAlignment="center"
+            android:textSize="18sp"
+            app:layout_constraintEnd_toStartOf="@+id/profilestarsphoto"
+            app:layout_constraintTop_toBottomOf="@+id/avatarname" />
+
+        <ImageView
+            android:id="@+id/profileImage"
+            android:layout_width="106dp"
+            android:layout_height="112dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="32dp"
+            android:src="@drawable/icon"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/icon"
+            tools:ignore="MissingConstraints" />
+
+        <TextView
+            android:id="@+id/accountappinfo"
+            android:layout_width="240dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="150dp"
+            android:fontFamily="@font/roboto_mono"
+            android:text="Про додаток"
+            android:textAlignment="center"
+            android:textSize="30sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/profileImage" />
+
+        <ImageView
+            android:id="@+id/accountappinfobutton"
+            android:layout_width="51dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="62dp"
+            android:src="@drawable/arrow"
+            app:layout_constraintBottom_toBottomOf="@+id/accountappinfo"
+            app:layout_constraintStart_toEndOf="@+id/accountappinfo" />
+
+        <ImageView
+            android:id="@+id/log_out_button"
+            android:layout_width="51dp"
+            android:layout_height="50dp"
+            android:src="@drawable/arrow"
+            app:layout_constraintEnd_toEndOf="@+id/accountappinfobutton"
+            app:layout_constraintTop_toTopOf="@+id/logout" />
+
+        <ImageView
+            android:id="@+id/editnicknamebutton"
+            android:layout_width="26dp"
+            android:layout_height="27dp"
+            android:layout_marginStart="8dp"
+            android:src="@drawable/pencil"
+            app:layout_constraintBottom_toBottomOf="@+id/avatarname"
+            app:layout_constraintStart_toEndOf="@+id/avatarname" />
+
+        <ImageView
+            android:id="@+id/choosephotobutton"
+            android:layout_width="24dp"
+            android:layout_height="30dp"
+            android:layout_marginTop="8dp"
+            android:src="@drawable/pencil"
+            app:layout_constraintEnd_toEndOf="@+id/profileImage"
+            app:layout_constraintTop_toTopOf="@+id/profileImage" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</FrameLayout>
